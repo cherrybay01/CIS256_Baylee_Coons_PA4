@@ -4,7 +4,7 @@
 
 import random
 
-# list of figure skating words to guess
+# list of figure skating words
 words = ["axel", "salchow", "loop", "spin", "jump", "ice", "skater"]
 
 def choose_word():
@@ -16,7 +16,7 @@ def main():
     guessed_letters = []
     tries = 6
     
-    print("Welcome to the Figure Skating Word Guessing Game!")
+    print("Welcome, Here's my Figure Skating based Word Guessing Game!")
     
     while tries > 0:
         # build the string showing correctly guessed letters or underscores
@@ -32,7 +32,7 @@ def main():
         
         # if there are no underscores left, they won
         if "_" not in display:
-            print("Congratulations! You guessed the word!")
+            print("Congratulations! You correctly guessed the right word!")
             break
             
         guess = input("Guess a letter: ").lower()
